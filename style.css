@@ -1,0 +1,150 @@
+
+/* CSS */
+.nav-button {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.nav-button:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.nav-button:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.nav-button:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.nav-button-activated {
+    align-items: center;
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+.title{
+    font-family: "JetBrains Mono",monospace;
+    font-size: 30px;
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+div{
+    font-family: "JetBrains Mono",monospace;
+}
+
+text{
+    font-family: "JetBrains Mono",monospace;
+}
+
+
+.axis{
+  font-size: 15px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 700;
+}
+.x-axis{
+  font-size: 13px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 700;
+}
+
+.y-axis{
+  font-size: 20px;
+}
+
+.chart{
+  background-color:white;
+  box-shadow:0 0 12px 1px rgb(206, 206, 206)
+}
+div.tooltip {	
+  position: absolute;			
+  text-align: center;				
+  padding: 8px;
+  width: 150px;				
+  font: 16px sans-serif;		
+  background: lightsteelblue;	
+  border: 0px;		
+  border-radius: 8px;			
+  pointer-events: none;		
+  display: flex;
+  align-items: center;
+  justify-content: center;	
+}
+
+.option-button {
+  background-color: rgb(0, 90, 170);
+  border: 1px solid rgb(138, 196, 247);
+  padding: 4px 20px;
+  color: white;
+  font-weight: 600;
+}
+
+#interactions{
+  overflow-y: auto;
+  padding: 10px 10px;
+}
+
+#options-container{
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  background-color: rgb(138, 196, 247);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 450px;
+}
