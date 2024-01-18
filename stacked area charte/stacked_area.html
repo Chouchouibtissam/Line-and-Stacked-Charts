@@ -5,60 +5,60 @@
 <script src="https://d3js.org/d3.v6.js"></script>
 <link rel="stylesheet" href="../style.css" />
 <title>TP Infovis</title>
-<div id="navbar"
-      style="width: 100%; display: flex; align-items: center; flex-direction: column; margin-bottom: 10px;">
-      <h1 class="title" style="margin-top: 30px;">Stacked Area</h1>
-      <ul style="list-style-type: none; margin-top: 12px; margin-bottom: 40px;">
+  <div id="navbar"
+  style="width: 100%; display: flex; align-items: center; flex-direction: column; margin-bottom: 10px;">
+  <h1 class="title" style="margin-top: 30px;">Stacked Area</h1>
+  <ul style="list-style-type: none; margin-top: 12px; margin-bottom: 40px;">
+    <li style="display: inline; padding: 20px;"><a class="nav-button" href="../multilines charte/multi_lines.html">Multiple series line chart</a></li>
           <li style="display: inline; padding: 20px;"><a class="nav-button-activated" href="../index.html">Stacked Area</a></li>
-          <li style="display: inline; padding: 20px;"><a class="nav-button" href="../multilines charte/multi_lines.html">Multiple series line chart</a></li>
-      </ul>
-  </div>
+  </ul>
+</div>
 <!-- Create a div where the graph will take place -->
 <div id="my_dataviz" style="display: flex; margin-left: 100px;">
-    <script src="stacked_area.js"></script>
-    <div id="options-container" style="margin-left: 0px">
-        <div id="legend">
-            <p style="margin-left: 7px; font-weight: bold;margin-top:10px; margin-bottom: 12px;">The Legend</p>
-            <div  style="display: flex ;flex-direction: row;">
-              <div id="dayd"
-                style="height: 24px; width: 24px ; margin-right: 6px;margin-bottom: 6px; margin-left: 6px; border-radius: 13px;">
-              </div> Daily Deaths
-            </div>
-            <div style="display: flex ;flex-direction: row;">
-              <div id="dayi"
-                style="height: 24px; width: 24px ; margin-right: 6px;margin-bottom: 6px; margin-left: 6px; border-radius: 13px;">
-              </div> Daily injuries
-            </div>
-            <div style="display: flex ;flex-direction: row;">
-              <div id="cumd"
-                style="height: 24px; width: 24px ; margin-right: 6px;margin-bottom: 6px; margin-left: 6px; border-radius: 13px;">
-              </div> Cummulative deaths
-            </div>
-            <div style="display: flex ;flex-direction: row;">
-              <div id="cumi"
-                style="height: 24px; width: 24px ;margin-right: 6px;margin-bottom: 6px; margin-left: 6px; border-radius: 13px;">
-              </div> Cummulative injuries
-            </div>
+<script src="stacked_area.js"></script>
+<div id="options-container" style="margin-left: 5px">
+    <div id="legend">
+        <p style="margin-left: 7px; font-weight: bold;margin-top:10px; margin-bottom: 12px;">The Legend</p>
+        <div  style="display: flex ;flex-direction: row;">
+          <div id="dayd"
+            style="height: 24px; width: 24px ; margin-right: 6px;margin-bottom: 6px; margin-left: 6px; border-radius: 13px;">
+          </div> Daily Deaths
         </div>
-        <div id="interactions">
+        <div style="display: flex ;flex-direction: row;">
+          <div id="dayi"
+            style="height: 24px; width: 24px ; margin-right: 6px;margin-bottom: 6px; margin-left: 6px; border-radius: 13px;">
+          </div> Daily injuries
+        </div>
+        <div style="display: flex ;flex-direction: row;">
+          <div id="cumd"
+            style="height: 24px; width: 24px ; margin-right: 6px;margin-bottom: 6px; margin-left: 6px; border-radius: 13px;">
+          </div> Cummulative deaths
+        </div>
+        <div style="display: flex ;flex-direction: row;">
+          <div id="cumi"
+            style="height: 24px; width: 24px ;margin-right: 6px;margin-bottom: 6px; margin-left: 6px; border-radius: 13px;">
+          </div> Cummulative injuries
+        </div>
+    </div>
+    <div id="interactions">
+        <div>
+            <p style="margin: 3px; font-weight: bold; margin-bottom: 5px; margin-top: 5px">Filtre</p>
             <div>
-                <p style="margin: 3px; font-weight: bold; margin-bottom: 5px; margin-top: 5px">Filtre</p>
-                <div>
-                    <input type="radio"  name="stats" value="dailyDeaths">
-                    <label for="dailydeaths"> Daily Deaths </label><br>
-                    <input type="radio"  name="stats" value="dailyInjuries">
-                    <label for="dailyinjuries"> Daily injuries </label><br>
-                    <input type="radio"  name="stats"  value="cumDeaths">
-                    <label for="cumdeaths"> Cummulative deaths </label><br>
-                    <input type="radio"  name="stats"  value="cumInjuries">
-                    <label for="cuminjuries"> Cummulative injuries </label><br>
-                    <input type="radio"  name="reset"  value="myArea">
-                    <label for="cuminjuries"> All graphs </label><br>
-                </div>
-                <p style="margin: 0px; font-weight: bold; margin-top: 20px;">Zoom Infos</p>
-                <p style="margin: 0; max-width: 200px; font-size: 12px;">Vous pouvez zoomer en selectionnant une tranche du graphe avec la souris, et juste un double cliques pour dézoomer  </p>
-                
+                <input type="radio"  name="stats" value="dailyDeaths">
+                <label for="dailydeaths"> Daily Deaths </label><br>
+                <input type="radio"  name="stats" value="dailyInjuries">
+                <label for="dailyinjuries"> Daily injuries </label><br>
+                <input type="radio"  name="stats"  value="cumDeaths">
+                <label for="cumdeaths"> Cummulative deaths </label><br>
+                <input type="radio"  name="stats"  value="cumInjuries">
+                <label for="cuminjuries"> Cummulative injuries </label><br>
+                <input type="radio"  name="reset"  value="myArea">
+                <label for="cuminjuries"> All graphs </label><br>
             </div>
+            <p style="margin: 0px; font-weight: bold; margin-top: 20px;">Zoom Infos</p>
+            <p style="margin: 0; max-width: 200px; font-size: 12px;">Vous pouvez zoomer en selectionnant une tranche du graphe avec la souris, et juste un double cliques pour dézoomer  </p>
+            
         </div>
     </div>
 </div>
+

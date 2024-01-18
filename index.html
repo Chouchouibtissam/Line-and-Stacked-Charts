@@ -13,14 +13,33 @@
         style="width: 100%; display: flex; align-items: center; flex-direction: column; margin-bottom: 10px;">
         <h1 class="title" style="margin-top: 30px;">Multiple series line chart</h1>
         <ul style="list-style-type: none; margin-top: 12px; margin-bottom: 40px">
-            <li style="display: inline; padding: 20px;"><a class="nav-button" href="./stacked area charte/stacked_area.html">Stacked
-                Area</a></li>
             <li style="display: inline; padding: 20px;"><a class="nav-button-activated" href="./multilines charte/multi_lines.html">Multiple
-                    series line chart</a></li>
+                series line chart</a></li>
+        <li style="display: inline; padding: 20px;"><a class="nav-button" href="./stacked area charte/stacked_area.html">Stacked
+                Area</a></li>
         </ul>
     </div>
     <div id="all-chart-container" style="display: flex;justify-content: center; align-items: center;">
         <div id="chart-container" ></div>
+        <!-- Conteneur pour les carrés empilés -->
+        <div style="display: flex; flex-direction: column;">
+
+            <!-- Carré bleu en haut -->
+            <div style="margin-bottom : 10px;margin-left: 7px;">
+                <svg width="30" height="30">
+                    <rect width="30" height="30" style="fill: steelblue;"></rect>
+                </svg>
+                <span style="margin-left: 5px;">Daily_Injured_Persons</span>
+            </div>
+
+            <!-- Carré rouge en bas -->
+            <div style="margin-left: 7px;">
+                <svg width="30" height="30">
+                    <rect width="30" height="30" style="fill: red;"></rect>
+                </svg>
+                <span style="margin-left: 5px;">Daily_Killed_Persons</span>
+            </div>
+        </div>
         <script src="./multilines charte/daily_data.js"></script>
         <script src="./multilines charte/multi_line.js"> </script>
     </div>
